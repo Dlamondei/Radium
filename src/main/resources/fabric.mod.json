@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "radium",
+  "version": "${version}",
+  "name": "Radium",
+  "description": "Client-side scoreboard presentation tool with variable, fixed-line, and dynamic tracking modes.",
+  "authors": [
+    "br0q"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/radium/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "radium.Radium"
+    ],
+    "client": [
+      "radium.client.RadiumClient"
+    ],
+    "modmenu": [
+      "radium.client.compat.RadiumModMenuApi"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "radium.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": ">=18.0.0"
+  }
+}

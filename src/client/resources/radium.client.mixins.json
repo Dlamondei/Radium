@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "package": "radium.client.mixin",
+    "compatibilityLevel": "JAVA_25",
+    "client": [
+        "GuiMixin",
+        "PlayerTeamMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 0
+    }
+}
